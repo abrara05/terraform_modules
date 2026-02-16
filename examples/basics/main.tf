@@ -17,6 +17,6 @@ module "terraform_ec2" {
     subnet_id = module.terraform_vpc.public_subnet_id
     ami_id = "ami-019715e0d74f695be"
     instance_type = "t2.micro"
-    key_name = "terraform_module"
+    key_name = "octkeypair"
     instance_name = "server"
 }
